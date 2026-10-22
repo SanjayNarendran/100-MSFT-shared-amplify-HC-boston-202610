@@ -1,0 +1,42 @@
+relationship 77f8a917-f7e1-45af-a787-70522c627795
+	joinOnDateBehavior: datePartOnly
+	fromColumn: PSI90.'start date'
+	toColumn: LocalDateTable_2b567379-7512-4758-abf6-b7837503f1f3.Date
+
+relationship 2246d3ec-2d84-4616-a8ff-5f9e1553d998
+	joinOnDateBehavior: datePartOnly
+	fromColumn: PSI90.'end date'
+	toColumn: LocalDateTable_ea7eeb78-70b6-435f-b4b8-dffe7c958ded.Date
+
+relationship 6eac2acc-a21c-4fe4-b270-669ddcb5154d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HCAHPS.'start date'
+	toColumn: LocalDateTable_320f3e12-b39d-451a-b3a8-1be473a580be.Date
+
+relationship 6c6a32f7-c385-493c-b78c-f7500be7452a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HCAHPS.'end date'
+	toColumn: LocalDateTable_b6666351-12bb-440d-97a4-5b6b896240a1.Date
+
+relationship f2e1d6c9-df85-408b-b344-ccb6b15059b6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HAI.'start date'
+	toColumn: LocalDateTable_81ac8a92-1d0f-4263-b0f9-bf6d184e6257.Date
+
+relationship 03eef6db-c0ab-4b9e-8cd8-14473132beab
+	joinOnDateBehavior: datePartOnly
+	fromColumn: HAI.'end date'
+	toColumn: LocalDateTable_9422183b-3e34-483b-8f29-006502fe3d3f.Date
+
+relationship AutoDetected_74234a6c-3a76-4607-a53e-bd964e2072bf
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: PSI90.FACILITYYEARKEY
+	toColumn: HAI.FACILITYYEARKEY
+
+relationship d7a7c21b-0823-15f1-64b1-3f4173da01bb
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: PSI90.FACILITYYEARKEY
+	toColumn: HCAHPS.FACILITYYEARKEY
+

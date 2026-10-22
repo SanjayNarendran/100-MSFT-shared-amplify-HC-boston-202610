@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["PSI90","HCAHPS","HAI"]
+
+ref table PSI90
+ref table LocalDateTable_2b567379-7512-4758-abf6-b7837503f1f3
+ref table LocalDateTable_ea7eeb78-70b6-435f-b4b8-dffe7c958ded
+ref table HCAHPS
+ref table LocalDateTable_320f3e12-b39d-451a-b3a8-1be473a580be
+ref table LocalDateTable_b6666351-12bb-440d-97a4-5b6b896240a1
+ref table HAI
+ref table LocalDateTable_81ac8a92-1d0f-4263-b0f9-bf6d184e6257
+ref table LocalDateTable_9422183b-3e34-483b-8f29-006502fe3d3f
+
+ref cultureInfo en-US
+
+ref expression 'DirectLake - lakehouse'

@@ -1,0 +1,316 @@
+table HCAHPS
+	lineageTag: e98504d3-0a32-4da7-85bc-d4cf1afa8196
+
+	column 'facility id'
+		dataType: string
+		lineageTag: 7320fe65-ce43-420b-b619-b21b82fd4e5c
+		summarizeBy: none
+		sourceColumn: facility_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'facility name'
+		dataType: string
+		lineageTag: 6e7122ba-cd9f-43bc-a52d-43d610ddee05
+		summarizeBy: none
+		sourceColumn: facility_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADDRESS
+		dataType: string
+		lineageTag: 5d2af0ae-20c1-4474-b8af-bd4be025fa1a
+		summarizeBy: none
+		sourceColumn: ADDRESS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITY
+		dataType: string
+		lineageTag: c82a3c1f-beb9-4747-8874-5833ee07b3e1
+		summarizeBy: none
+		sourceColumn: CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATE
+		dataType: string
+		lineageTag: 6a251ff7-b847-4f2c-b620-2e7e05b8ccfc
+		summarizeBy: none
+		sourceColumn: STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'zip code'
+		dataType: string
+		lineageTag: d537f42a-6f84-4160-9bba-45cbb8839682
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'start date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d15f503e-e7ad-421b-8903-befe9aa1219c
+		summarizeBy: none
+		sourceColumn: start_date
+
+		variation Variation
+			isDefault
+			relationship: 6eac2acc-a21c-4fe4-b270-669ddcb5154d
+			defaultHierarchy: LocalDateTable_320f3e12-b39d-451a-b3a8-1be473a580be.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'end date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5d083e6c-eeb1-4992-8246-072bc0161b1b
+		summarizeBy: none
+		sourceColumn: end_date
+
+		variation Variation
+			isDefault
+			relationship: 6c6a32f7-c385-493c-b78c-f7500be7452a
+			defaultHierarchy: LocalDateTable_b6666351-12bb-440d-97a4-5b6b896240a1.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column REPORTYEAR
+		dataType: double
+		lineageTag: 974f6160-d985-4c63-bf58-97b24da5a6f3
+		summarizeBy: sum
+		sourceColumn: REPORTYEAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_CLEAN_LINEAR_SCORE-Cleanliness - linear mean score'
+		dataType: double
+		lineageTag: 62d60c94-0730-4e19-874a-b09734d3e8c6
+		summarizeBy: sum
+		sourceColumn: H_CLEAN_LINEAR_SCORE_Cleanliness_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_CLEAN_STAR_RATING-Cleanliness - star rating'
+		dataType: double
+		lineageTag: 68a779d6-dbfa-4a43-a0f9-728e6e0cc672
+		summarizeBy: sum
+		sourceColumn: H_CLEAN_STAR_RATING_Cleanliness_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_1_LINEAR_SCORE-Nurse communication - linear mean score'
+		dataType: double
+		lineageTag: 761b7feb-6c96-4bdf-a063-c3a2233d783c
+		summarizeBy: sum
+		sourceColumn: H_COMP_1_LINEAR_SCORE_Nurse_communication_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_1_STAR_RATING-Nurse communication - star rating'
+		dataType: double
+		lineageTag: c4b406a4-37cf-44f7-8542-3b783c9d5010
+		summarizeBy: sum
+		sourceColumn: H_COMP_1_STAR_RATING_Nurse_communication_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_2_LINEAR_SCORE-Doctor communication - linear mean score'
+		dataType: double
+		lineageTag: 7c437f8f-41fe-4905-83ed-d9a6e9787b54
+		summarizeBy: sum
+		sourceColumn: H_COMP_2_LINEAR_SCORE_Doctor_communication_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_2_STAR_RATING-Doctor communication - star rating'
+		dataType: double
+		lineageTag: fcf3e0bb-4275-4c40-8f53-e27fadeeadc5
+		summarizeBy: sum
+		sourceColumn: H_COMP_2_STAR_RATING_Doctor_communication_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_3_LINEAR_SCORE-Staff responsiveness - linear mean score'
+		dataType: double
+		lineageTag: 9969470e-fdaa-458a-a173-9ead0bffdc9d
+		summarizeBy: sum
+		sourceColumn: H_COMP_3_LINEAR_SCORE_Staff_responsiveness_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_3_STAR_RATING-Staff responsiveness - star rating'
+		dataType: double
+		lineageTag: 0e396362-60a0-46fe-93d4-aa145e7e7d87
+		summarizeBy: sum
+		sourceColumn: H_COMP_3_STAR_RATING_Staff_responsiveness_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_5_LINEAR_SCORE-Communication about medicines - linear mean score'
+		dataType: double
+		lineageTag: 6f94c1b1-3540-49a4-8665-c3315043b949
+		summarizeBy: sum
+		sourceColumn: H_COMP_5_LINEAR_SCORE_Communication_about_medicines_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_5_STAR_RATING-Communication about medicines - star rating'
+		dataType: double
+		lineageTag: 3569be60-777c-44a6-a248-8b1c653bb219
+		summarizeBy: sum
+		sourceColumn: H_COMP_5_STAR_RATING_Communication_about_medicines_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_6_LINEAR_SCORE-Discharge information - linear mean score'
+		dataType: double
+		lineageTag: 1b33cad3-bd21-42fd-9af9-beac00198e39
+		summarizeBy: sum
+		sourceColumn: H_COMP_6_LINEAR_SCORE_Discharge_information_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_6_STAR_RATING-Discharge information - star rating'
+		dataType: double
+		lineageTag: 9880c8a3-4669-482d-b7a2-39bc4b0f97a2
+		summarizeBy: sum
+		sourceColumn: H_COMP_6_STAR_RATING_Discharge_information_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_7_LINEAR_SCORE-Care transition - linear mean score'
+		dataType: double
+		lineageTag: c6fda688-5c83-469a-a488-a09ae41d4845
+		summarizeBy: sum
+		sourceColumn: H_COMP_7_LINEAR_SCORE_Care_transition_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_COMP_7_STAR_RATING-Care transition - star rating'
+		dataType: double
+		lineageTag: 890a7c5d-303e-4ad6-98dc-eddc2ab1087e
+		summarizeBy: sum
+		sourceColumn: H_COMP_7_STAR_RATING_Care_transition_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_HSP_RATING_LINEAR_SCORE-Overall hospital rating - linear mean score'
+		dataType: double
+		lineageTag: 29e57033-cb1c-4eb0-b391-cabb4f702e53
+		summarizeBy: sum
+		sourceColumn: H_HSP_RATING_LINEAR_SCORE_Overall_hospital_rating_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_HSP_RATING_STAR_RATING-Overall hospital rating - star rating'
+		dataType: double
+		lineageTag: 183d03ac-e2ee-4226-8784-76465b039bc3
+		summarizeBy: sum
+		sourceColumn: H_HSP_RATING_STAR_RATING_Overall_hospital_rating_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_QUIET_LINEAR_SCORE-Quietness - linear mean score'
+		dataType: double
+		lineageTag: 12630854-0bd8-451c-8e92-49556354956d
+		summarizeBy: sum
+		sourceColumn: H_QUIET_LINEAR_SCORE_Quietness_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_QUIET_STAR_RATING-Quietness - star rating'
+		dataType: double
+		lineageTag: b5d430fa-8b0f-4990-b307-8ae78b343f99
+		summarizeBy: sum
+		sourceColumn: H_QUIET_STAR_RATING_Quietness_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_RECMND_LINEAR_SCORE-Recommend hospital - linear mean score'
+		dataType: double
+		lineageTag: 5f152f2f-dff6-4080-a75e-103375eb9f4d
+		summarizeBy: sum
+		sourceColumn: H_RECMND_LINEAR_SCORE_Recommend_hospital_linear_mean_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_RECMND_STAR_RATING-Recommend hospital - star rating'
+		dataType: double
+		lineageTag: 272a3b2f-72c7-4ab3-bb55-32419766b359
+		summarizeBy: sum
+		sourceColumn: H_RECMND_STAR_RATING_Recommend_hospital_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'H_STAR_RATING-Summary star rating'
+		dataType: double
+		lineageTag: 84f148e7-1ca7-43b0-a272-6608d1f77d6f
+		summarizeBy: sum
+		sourceColumn: H_STAR_RATING_Summary_star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FACILITYYEARKEY
+		dataType: string
+		lineageTag: 48ed7fe1-1d6c-4a0d-9f87-38a75e446f8f
+		summarizeBy: none
+		sourceColumn: FACILITYYEARKEY
+
+		annotation SummarizationSetBy = Automatic
+
+	partition HCAHPS = entity
+		mode: directLake
+		source
+			entityName: hcahps
+			expressionSource: 'DirectLake - lakehouse'

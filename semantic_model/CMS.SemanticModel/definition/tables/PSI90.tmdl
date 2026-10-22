@@ -1,0 +1,239 @@
+table PSI90
+	lineageTag: fbc18588-a805-4356-a888-fbfa4187c4aa
+
+	column 'facility id'
+		dataType: string
+		lineageTag: 6fb390bf-5d58-4d52-98b9-2ff5139348e7
+		summarizeBy: none
+		sourceColumn: facility_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'facility name'
+		dataType: string
+		lineageTag: 112992e3-87c8-4cad-af0c-1afd9f65bcfe
+		summarizeBy: none
+		sourceColumn: facility_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADDRESS
+		dataType: string
+		lineageTag: df43ac15-a85e-4c0b-af6c-2a71548e618b
+		summarizeBy: none
+		sourceColumn: ADDRESS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITY
+		dataType: string
+		lineageTag: 8823e1f0-af04-482a-8f3b-b870615bb94b
+		summarizeBy: none
+		sourceColumn: CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATE
+		dataType: string
+		lineageTag: f8685d43-3929-4a5a-9db4-829d4d3791db
+		summarizeBy: none
+		sourceColumn: STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'zip code'
+		dataType: string
+		lineageTag: c7ebb229-c1f3-4909-8ae4-074ecca2f689
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'start date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7d7f6b5e-152d-450c-8716-6c13ae0e597f
+		summarizeBy: none
+		sourceColumn: start_date
+
+		variation Variation
+			isDefault
+			relationship: 77f8a917-f7e1-45af-a787-70522c627795
+			defaultHierarchy: LocalDateTable_2b567379-7512-4758-abf6-b7837503f1f3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'end date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fe11b865-89ea-4da2-b067-7b517a7aa40f
+		summarizeBy: none
+		sourceColumn: end_date
+
+		variation Variation
+			isDefault
+			relationship: 2246d3ec-2d84-4616-a8ff-5f9e1553d998
+			defaultHierarchy: LocalDateTable_ea7eeb78-70b6-435f-b4b8-dffe7c958ded.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column REPORTYEAR
+		dataType: double
+		lineageTag: 506d8c1f-12a0-4162-b899-c51e58f168f4
+		summarizeBy: sum
+		sourceColumn: REPORTYEAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Abdominopelvic accidental puncture or laceration rate'
+		dataType: double
+		lineageTag: 672b5d23-62ac-44ad-ab4f-0ea9153fbd1e
+		summarizeBy: sum
+		sourceColumn: Abdominopelvic_accidental_puncture_or_laceration_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CMS Medicare PSI 90: Patient safety and adverse events composite'
+		dataType: double
+		lineageTag: 30bcbe28-8b52-4fc0-9b80-fea39ad6b25b
+		summarizeBy: sum
+		sourceColumn: CMS_Medicare_PSI_90_Patient_safety_and_adverse_events_composite
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Iatrogenic pneumothorax rate'
+		dataType: double
+		lineageTag: dcd48b55-81b0-4405-af9c-3d9bd7097e85
+		summarizeBy: sum
+		sourceColumn: Iatrogenic_pneumothorax_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'In-hospital fall with hip fracture rate'
+		dataType: double
+		lineageTag: d1cf2ec9-14bb-4ec5-8d6a-0196658b5f5e
+		summarizeBy: sum
+		sourceColumn: In_hospital_fall_with_hip_fracture_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'In-hospital fall-associated fracture rate'
+		dataType: double
+		lineageTag: 1cda21e9-e65f-4829-b431-1d497c383e9d
+		summarizeBy: sum
+		sourceColumn: In_hospital_fall_associated_fracture_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Perioperative hemorrhage or hematoma rate'
+		dataType: double
+		lineageTag: 308afde6-7d17-4a62-a99e-66774383a583
+		summarizeBy: sum
+		sourceColumn: Perioperative_hemorrhage_or_hematoma_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Perioperative pulmonary embolism or deep vein thrombosis rate'
+		dataType: double
+		lineageTag: f6b72bd3-685e-43b7-ad0f-47eea3568bc9
+		summarizeBy: sum
+		sourceColumn: Perioperative_pulmonary_embolism_or_deep_vein_thrombosis_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Postoperative acute kidney injury requiring dialysis rate'
+		dataType: double
+		lineageTag: 2d3ee963-d1ae-40c5-98b7-b04f00f12464
+		summarizeBy: sum
+		sourceColumn: Postoperative_acute_kidney_injury_requiring_dialysis_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Postoperative hemorrhage or hematoma rate'
+		dataType: double
+		lineageTag: c62b47a2-270a-41f4-9e99-8d240ba16575
+		summarizeBy: sum
+		sourceColumn: Postoperative_hemorrhage_or_hematoma_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Postoperative respiratory failure rate'
+		dataType: double
+		lineageTag: 31f66b0f-d57b-41a4-8b6b-14ed84a3209d
+		summarizeBy: sum
+		sourceColumn: Postoperative_respiratory_failure_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Postoperative sepsis rate'
+		dataType: double
+		lineageTag: 86ccb78c-3c9c-4f44-bfba-ae7c53c6e9d2
+		summarizeBy: sum
+		sourceColumn: Postoperative_sepsis_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Postoperative wound dehiscence rate'
+		dataType: double
+		lineageTag: 282cf0e7-7d9e-416b-96f8-8f1c4586fc5f
+		summarizeBy: sum
+		sourceColumn: Postoperative_wound_dehiscence_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Pressure ulcer rate'
+		dataType: double
+		lineageTag: fd63d3de-caa4-4d0b-99e9-e0a7c49bb35a
+		summarizeBy: sum
+		sourceColumn: Pressure_ulcer_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FACILITYYEARKEY
+		dataType: string
+		lineageTag: 44a4064c-1eee-4de3-9a2e-c572963c7cd2
+		summarizeBy: none
+		sourceColumn: FACILITYYEARKEY
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PSI90 = entity
+		mode: directLake
+		source
+			entityName: psi90
+			expressionSource: 'DirectLake - lakehouse'
+
+	annotation PBI_ResultType = Table
+

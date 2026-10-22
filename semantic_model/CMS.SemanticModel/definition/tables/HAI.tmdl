@@ -1,0 +1,466 @@
+table HAI
+	lineageTag: 9e70f829-167f-4d2f-b61b-804ad8788967
+
+	column 'facility id'
+		dataType: string
+		lineageTag: a672302f-81ba-44c1-9c5c-064ac3a049fc
+		summarizeBy: none
+		sourceColumn: facility_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'facility name'
+		dataType: string
+		lineageTag: 9a7183f1-765b-4675-83bb-6ed585a14569
+		summarizeBy: none
+		sourceColumn: facility_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADDRESS
+		dataType: string
+		lineageTag: 8ff28093-dc1a-423b-a3af-16c94dbe3f9a
+		summarizeBy: none
+		sourceColumn: ADDRESS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITY
+		dataType: string
+		lineageTag: 83abcfe7-f665-46d0-b939-593a56f4452e
+		summarizeBy: none
+		sourceColumn: CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATE
+		dataType: string
+		lineageTag: 8845367e-3780-47b8-b13e-706d672a9cb7
+		summarizeBy: none
+		sourceColumn: STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'zip code'
+		dataType: string
+		lineageTag: 75b60419-ee5f-4d02-affb-c94c2507c643
+		summarizeBy: none
+		sourceColumn: zip_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'start date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 36edbe5a-620f-43cb-b9f9-a101054b5cbb
+		summarizeBy: none
+		sourceColumn: start_date
+
+		variation Variation
+			isDefault
+			relationship: f2e1d6c9-df85-408b-b344-ccb6b15059b6
+			defaultHierarchy: LocalDateTable_81ac8a92-1d0f-4263-b0f9-bf6d184e6257.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'end date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f54a3fbf-175a-483c-b642-e474a4a2d500
+		summarizeBy: none
+		sourceColumn: end_date
+
+		variation Variation
+			isDefault
+			relationship: 03eef6db-c0ab-4b9e-8cd8-14473132beab
+			defaultHierarchy: LocalDateTable_9422183b-3e34-483b-8f29-006502fe3d3f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column REPORTYEAR
+		dataType: double
+		lineageTag: 4a6def7c-ee2c-4131-b37d-7d9d17106e9c
+		summarizeBy: sum
+		sourceColumn: REPORTYEAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FACILITYYEARKEY
+		dataType: string
+		lineageTag: 4816b38b-b8a4-4cfa-b6c6-7ab7236d049f
+		summarizeBy: none
+		sourceColumn: FACILITYYEARKEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'HAI_1_SIR-Central Line Associated Bloodstream Infection (ICU + select Wards)'
+		dataType: double
+		lineageTag: 787004b7-8a10-479f-98de-8d48a3c63312
+		summarizeBy: sum
+		sourceColumn: HAI_1_SIR_Central_Line_Associated_Bloodstream_Infection_ICU_select_Wards
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_2_SIR-Catheter Associated Urinary Tract Infections (ICU + select Wards)'
+		dataType: double
+		lineageTag: 948dad63-a0d7-41ca-a1fe-80ad9f19d65e
+		summarizeBy: sum
+		sourceColumn: HAI_2_SIR_Catheter_Associated_Urinary_Tract_Infections_ICU_select_Wards
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_3_SIR-SSI - Colon Surgery'
+		dataType: double
+		lineageTag: 6ca2dba0-b087-479f-b9c9-1ba2f702f40f
+		summarizeBy: sum
+		sourceColumn: HAI_3_SIR_SSI_Colon_Surgery
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_4_SIR-SSI - Abdominal Hysterectomy'
+		dataType: double
+		lineageTag: 01df7f90-1f73-46bf-9d75-fb175173a15f
+		summarizeBy: sum
+		sourceColumn: HAI_4_SIR_SSI_Abdominal_Hysterectomy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_5_SIR-MRSA Bacteremia'
+		dataType: double
+		lineageTag: 3af6b433-70e3-4ed3-b843-aca5647f5f4f
+		summarizeBy: sum
+		sourceColumn: HAI_5_SIR_MRSA_Bacteremia
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_6_SIR-Clostridium Difficile (C.Diff)'
+		dataType: double
+		lineageTag: e2b67f5f-36b6-4a17-ae77-ff1515711e68
+		summarizeBy: sum
+		sourceColumn: HAI_6_SIR_Clostridium_Difficile_C_Diff
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_1_CILOWER-Central Line Associated Bloodstream Infection (ICU + select Wards): Lower Confidence Limit'
+		dataType: double
+		lineageTag: f75f1c38-3499-4d27-9527-b5b7019fba1b
+		summarizeBy: sum
+		sourceColumn: HAI_1_CILOWER_Central_Line_Associated_Bloodstream_Infection_ICU_select_Wards_Lower_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_1_CIUPPER-Central Line Associated Bloodstream Infection (ICU + select Wards): Upper Confidence Limit'
+		dataType: double
+		lineageTag: 3120be5f-669a-47fa-80a8-bc08324ddcf4
+		summarizeBy: sum
+		sourceColumn: HAI_1_CIUPPER_Central_Line_Associated_Bloodstream_Infection_ICU_select_Wards_Upper_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_1_DOPC-Central Line Associated Bloodstream Infection: Number of Device Days'
+		dataType: double
+		lineageTag: 06ee1b93-94b6-43a5-b304-7b7f8b15c66a
+		summarizeBy: sum
+		sourceColumn: HAI_1_DOPC_Central_Line_Associated_Bloodstream_Infection_Number_of_Device_Days
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_1_ELIGCASES-Central Line Associated Bloodstream Infection (ICU + select Wards): Predicted Cases'
+		dataType: double
+		lineageTag: cc3a48b8-83e9-401d-a585-bbbb5f9337f5
+		summarizeBy: sum
+		sourceColumn: HAI_1_ELIGCASES_Central_Line_Associated_Bloodstream_Infection_ICU_select_Wards_Predicted_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_1_NUMERATOR-Central Line Associated Bloodstream Infection (ICU + select Wards): Observed Cases'
+		dataType: double
+		lineageTag: b590939f-5eaa-47de-a670-dacf0d12b9d0
+		summarizeBy: sum
+		sourceColumn: HAI_1_NUMERATOR_Central_Line_Associated_Bloodstream_Infection_ICU_select_Wards_Observed_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_2_CILOWER-Catheter Associated Urinary Tract Infections (ICU + select Wards): Lower Confidence Limit'
+		dataType: double
+		lineageTag: 790b379e-fac6-4290-b660-cde79bf1b6b9
+		summarizeBy: sum
+		sourceColumn: HAI_2_CILOWER_Catheter_Associated_Urinary_Tract_Infections_ICU_select_Wards_Lower_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_2_CIUPPER-Catheter Associated Urinary Tract Infections (ICU + select Wards): Upper Confidence Limit'
+		dataType: double
+		lineageTag: 6f37105b-fab8-469b-a52c-ff3589886864
+		summarizeBy: sum
+		sourceColumn: HAI_2_CIUPPER_Catheter_Associated_Urinary_Tract_Infections_ICU_select_Wards_Upper_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_2_DOPC-Catheter Associated Urinary Tract Infections (ICU + select Wards): Number of Urinary Catheter Days'
+		dataType: double
+		lineageTag: edc0c85b-4a53-491d-9201-d5da0320e73d
+		summarizeBy: sum
+		sourceColumn: HAI_2_DOPC_Catheter_Associated_Urinary_Tract_Infections_ICU_select_Wards_Number_of_Urinary_Catheter_Days
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_2_ELIGCASES-Catheter Associated Urinary Tract Infections (ICU + select Wards): Predicted Cases'
+		dataType: double
+		lineageTag: 48355060-e15f-4919-b472-6d033894c717
+		summarizeBy: sum
+		sourceColumn: HAI_2_ELIGCASES_Catheter_Associated_Urinary_Tract_Infections_ICU_select_Wards_Predicted_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_2_NUMERATOR-Catheter Associated Urinary Tract Infections (ICU + select Wards): Observed Cases'
+		dataType: double
+		lineageTag: d96616d8-e9c6-4354-bbfd-37c2ddbcdedc
+		summarizeBy: sum
+		sourceColumn: HAI_2_NUMERATOR_Catheter_Associated_Urinary_Tract_Infections_ICU_select_Wards_Observed_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_3_CILOWER-SSI - Colon Surgery: Lower Confidence Limit'
+		dataType: double
+		lineageTag: fd47b5f2-09f3-4d09-a9d3-4e54abde7a82
+		summarizeBy: sum
+		sourceColumn: HAI_3_CILOWER_SSI_Colon_Surgery_Lower_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_3_CIUPPER-SSI - Colon Surgery: Upper Confidence Limit'
+		dataType: double
+		lineageTag: a3852143-d19f-4fd4-a6e9-e01f9b62adbe
+		summarizeBy: sum
+		sourceColumn: HAI_3_CIUPPER_SSI_Colon_Surgery_Upper_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_3_DOPC-SSI - Colon Surgery: Number of Procedures'
+		dataType: double
+		lineageTag: f729418e-4e6d-4b82-bfc7-e298e38783c5
+		summarizeBy: sum
+		sourceColumn: HAI_3_DOPC_SSI_Colon_Surgery_Number_of_Procedures
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_3_ELIGCASES-SSI - Colon Surgery: Predicted Cases'
+		dataType: double
+		lineageTag: 006b8bf5-26ee-484d-bdc3-ef611e6c4334
+		summarizeBy: sum
+		sourceColumn: HAI_3_ELIGCASES_SSI_Colon_Surgery_Predicted_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_3_NUMERATOR-SSI - Colon Surgery: Observed Cases'
+		dataType: double
+		lineageTag: e6e54920-9b0d-4bbe-8761-1d2f94ea771d
+		summarizeBy: sum
+		sourceColumn: HAI_3_NUMERATOR_SSI_Colon_Surgery_Observed_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_4_CILOWER-SSI - Abdominal Hysterectomy: Lower Confidence Limit'
+		dataType: double
+		lineageTag: 7f4c9b52-6a29-45fc-a8c0-397851629c02
+		summarizeBy: sum
+		sourceColumn: HAI_4_CILOWER_SSI_Abdominal_Hysterectomy_Lower_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_4_CIUPPER-SSI - Abdominal Hysterectomy: Upper Confidence Limit'
+		dataType: double
+		lineageTag: de3ead65-d0d8-4a43-9485-52a4e88e82e7
+		summarizeBy: sum
+		sourceColumn: HAI_4_CIUPPER_SSI_Abdominal_Hysterectomy_Upper_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_4_DOPC-SSI - Abdominal Hysterectomy: Number of Procedures'
+		dataType: double
+		lineageTag: e854540c-2c4a-4c45-b05e-56baab49c9a1
+		summarizeBy: sum
+		sourceColumn: HAI_4_DOPC_SSI_Abdominal_Hysterectomy_Number_of_Procedures
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_4_ELIGCASES-SSI - Abdominal Hysterectomy: Predicted Cases'
+		dataType: double
+		lineageTag: 906b41f9-6212-46e9-b506-5014f65f55fd
+		summarizeBy: sum
+		sourceColumn: HAI_4_ELIGCASES_SSI_Abdominal_Hysterectomy_Predicted_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_4_NUMERATOR-SSI - Abdominal Hysterectomy: Observed Cases'
+		dataType: double
+		lineageTag: 206312a0-26b0-4621-b42f-7acc5ae9b4ec
+		summarizeBy: sum
+		sourceColumn: HAI_4_NUMERATOR_SSI_Abdominal_Hysterectomy_Observed_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_5_CILOWER-MRSA Bacteremia: Lower Confidence Limit'
+		dataType: double
+		lineageTag: 62759781-15a0-4913-957e-d34fc0f30794
+		summarizeBy: sum
+		sourceColumn: HAI_5_CILOWER_MRSA_Bacteremia_Lower_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_5_CIUPPER-MRSA Bacteremia: Upper Confidence Limit'
+		dataType: double
+		lineageTag: 1275db35-002a-407e-934c-8aaa8ffa21f8
+		summarizeBy: sum
+		sourceColumn: HAI_5_CIUPPER_MRSA_Bacteremia_Upper_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_5_DOPC-MRSA Bacteremia: Patient Days'
+		dataType: double
+		lineageTag: 2f0ab9b6-ee47-42c4-985f-d6246f9c9721
+		summarizeBy: sum
+		sourceColumn: HAI_5_DOPC_MRSA_Bacteremia_Patient_Days
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_5_ELIGCASES-MRSA Bacteremia: Predicted Cases'
+		dataType: double
+		lineageTag: 408a0d7c-efd9-43fe-a7fc-d3fe08f1f160
+		summarizeBy: sum
+		sourceColumn: HAI_5_ELIGCASES_MRSA_Bacteremia_Predicted_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_5_NUMERATOR-MRSA Bacteremia: Observed Cases'
+		dataType: double
+		lineageTag: 0f71a8d0-31c6-4bc2-ba8e-c1119586e2e0
+		summarizeBy: sum
+		sourceColumn: HAI_5_NUMERATOR_MRSA_Bacteremia_Observed_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_6_CILOWER-Clostridium Difficile (C.Diff): Lower Confidence Limit'
+		dataType: double
+		lineageTag: c28dd8cb-ee62-4566-9cde-69221e46a0ac
+		summarizeBy: sum
+		sourceColumn: HAI_6_CILOWER_Clostridium_Difficile_C_Diff_Lower_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_6_CIUPPER-Clostridium Difficile (C.Diff): Upper Confidence Limit'
+		dataType: double
+		lineageTag: 80679e2c-fdd4-4b8f-a37a-da30ebe1b790
+		summarizeBy: sum
+		sourceColumn: HAI_6_CIUPPER_Clostridium_Difficile_C_Diff_Upper_Confidence_Limit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_6_DOPC-Clostridium Difficile (C.Diff): Patient Days'
+		dataType: double
+		lineageTag: d649e7a2-5bc3-48db-8050-05c6a10b3687
+		summarizeBy: sum
+		sourceColumn: HAI_6_DOPC_Clostridium_Difficile_C_Diff_Patient_Days
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_6_ELIGCASES-Clostridium Difficile (C.Diff): Predicted Cases'
+		dataType: double
+		lineageTag: d36a0009-0b9d-41ef-b25e-f295bca04a48
+		summarizeBy: sum
+		sourceColumn: HAI_6_ELIGCASES_Clostridium_Difficile_C_Diff_Predicted_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'HAI_6_NUMERATOR-Clostridium Difficile (C.Diff): Observed Cases'
+		dataType: double
+		lineageTag: c9264ae4-1ec3-41f2-9bd2-eb10af2efd0a
+		summarizeBy: sum
+		sourceColumn: HAI_6_NUMERATOR_Clostridium_Difficile_C_Diff_Observed_Cases
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition HAI = entity
+		mode: directLake
+		source
+			entityName: hai
+			expressionSource: 'DirectLake - lakehouse'
